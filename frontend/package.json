@@ -1,0 +1,4 @@
+{"name":"Gaposa-frontend","type":"module","private":true,
+"scripts":{"test":"vitest run"},
+"devDependencies":{"vitest":"^1.6.0","jsdom":"^24.0.0"},
+"vitest":{"environment":"jsdom","globals":true}}

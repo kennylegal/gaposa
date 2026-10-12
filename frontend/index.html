@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gaposa</title>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/layout.css">
+<link rel="stylesheet" href="./css/components.css">
+<link rel="stylesheet" href="./css/views.css">
+<link rel="stylesheet" href="./css/dark.css">
+</head><body>
+<div id="login-screen" class="login-screen">
+<div class="login-card">
+<div class="login-brand"><div class="brand-logo">✚</div>
+<div><h1 style="font-size:19px">Gaposa</h1><p class="muted small">University Health Centre</p></div></div>
+<h2 class="login-title">Sign in to continue</h2>
+<p class="muted small" style="margin-bottom:22px">Select your role.</p>
+<div class="login-roles" id="login-roles"></div>
+<div class="login-error" id="login-error"></div>
+</div><p class="login-footer muted small">Gaposa v2.2</p></div>
+<div id="app" style="display:none">
+<aside class="sidebar" id="sidebar">
+<div class="brand"><div class="brand-logo">✚</div>
+<div class="brand-text"><strong id="brand-name">Gaposa</strong><span>Health Centre</span></div></div>
+<nav class="nav" id="nav"></nav>
+<div class="sidebar-foot"><div id="foot-user">—</div>
+<div style="margin-top:3px" class="small muted">v2.2 · <span id="foot-role">—</span></div></div>
+</aside>
+<div class="main">
+<header class="topbar">
+<button class="icon-btn menu-btn" id="menu-btn"></button>
+<h1 id="page-title">Dashboard</h1>
+<div class="topbar-right">
+<button class="icon-btn" id="cmdk-btn" title="Search"></button>
+<button class="icon-btn" id="theme-btn" title="Theme"></button>
+<button class="icon-btn" id="notif-btn" title="Notifications">
+<span class="notif-dot" id="notif-dot" hidden style="position:absolute;top:5px;right:5px;width:8px;height:8px;border-radius:50%;background:var(--danger);border:2px solid var(--surface)"></span>
+</button>
+<div class="user-chip"><div class="avatar" id="user-avatar">–</div>
+<div style="line-height:1.25">
+<div style="font-size:12.5px;font-weight:600" id="user-name">–</div>
+<div class="muted" style="font-size:11px" id="user-role">–</div>
+</div></div></div></header>
+<div class="content" id="view"></div></div></div>
+<div id="modal-root"></div><div id="toast-root"></div><div id="print-root"></div>
+<div id="cmd-palette" class="cmdk" hidden></div>
+<script type="module" src="./js/main.js"></script>
+</body></html>
