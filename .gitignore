@@ -1,8 +1,130 @@
+# ─────────────────────────────────────────────────────────────
+# Python / Django
+# ─────────────────────────────────────────────────────────────
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtualenvs
 .venv/
-db.sqlite3
-logs/
-node_modules/
-.env
+venv/
+ENV/
+env/
+.python-version
+
+# Django
 *.log
+local_settings.py
+/backend/db.sqlite3
+db.sqlite3-journal
+/backend/media/
+/backend/staticfiles/
+/backend/logs/
+/backend/venv/
+
+# pytest
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Environment
+.env
+.env.*
+!.env.example
+*.env
+secrets.json
+
+# ─────────────────────────────────────────────────────────────
+# Node / Frontend tooling
+# ─────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm
+.yarn/
+.pnp
+.pnp.js
+
+# Vitest / coverage
+frontend/coverage/
+.nyc_output/
+
+# Build output (if you add a bundler later)
+frontend/dist/
+frontend/build/
+*.local
+
+# Vite, if you ever add it
+.vite/
+vite.config.js.timestamp-*
+
+# ─────────────────────────────────────────────────────────────
+# Editors / IDEs
+# ─────────────────────────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.\#*
+\#*\#
+
+# ─────────────────────────────────────────────────────────────
+# OS
+# ─────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─────────────────────────────────────────────────────────────
+# Runtime / app-generated
+# ─────────────────────────────────────────────────────────────
+Gaposa/backend/logs/*.log
+Gaposa/backend/logs/*.log.*
+Gaposa-backup-*.json
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
